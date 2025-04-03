@@ -1,4 +1,4 @@
-;(function () {
+;(function () { 
 	function Commit(id, parent, message) {
 		this.id = id;
 		this.parent = parent;
@@ -11,7 +11,7 @@
 	}
 
 	function Git(name) {
-		this.name = name;
+		this.name = name; 
 		this.lastCommitId = -1; 
 		this.branches = []; 
 
@@ -56,5 +56,6 @@
 
 		return history;
 	};
-	window.Git = Git;
+
+	module.exports = Git;
 })();
